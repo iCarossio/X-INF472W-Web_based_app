@@ -2,7 +2,7 @@
 
 ## The web app
 
-With @bathal1, we chose to create a web application allowing anyone to publish stylized resume online.
+With [@bathal1](https://github.com/bathal1), we chose to create a web application allowing anyone to publish stylized resume online. The administrator interface is user-friendly and really easy to use.
 The front-end is developed with AngularJS and the main interface is based on [IAMX](https://trendytheme.net/items/i-am-x-html-resume-template/) template.
 The back-end is made with PHP, according to the requirements of the course.
 All the data are stored in a MySQL database.
