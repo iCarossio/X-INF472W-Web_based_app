@@ -1,0 +1,37 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+/* créé par baptiste, pour les formulaires d'update de tables */
+
+.update_table{
+    font-size:12pt;
+    height:210px;
+    width:600px;
+}
+
+.timeline-logo img {
+    height: 75px !important;
+    width: auto !important;
+}
+
+object {
+    height: 75px !important;
+    width: auto !important;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: white;
+    text-align: center;
+}
