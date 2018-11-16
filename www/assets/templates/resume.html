@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="resume-title">
+      <h3 ng-if="resumeType == 'education'">Education</h3>
+      <h3 ng-if="resumeType == 'experiences'">Expériences</h3>
+      <h3><?php echo "Hello"; ?></h3>
+    </div>
+    <ul class="timeline">
+      <li ng-class="{'timeline-normal': entry.id%2==0, 'timeline-inverted':entry.id%2==1}" ng-repeat="entry in entries">
+        <div class="posted-date">
+          <span class="month">{{entry.dates}}</span>
+        </div>
+        <div class="timeline-panel wow fadeInUp">
+          <div class="timeline-content">
+            <div class="timeline-heading-bloc">
+              <div class="timeline-logo">
+                <a href="{{entry.url}}" alt="{{entry.institution}}" target="_blank">
+                  <img ng-src="{{entry.logo}}" onerror="this.src='../../admin/img/institution.png'" alt="{{entry.institution}}">
+                </a>
+              </div>
+              <div class="timeline-heading">
+                <h3>{{entry.title}}</h3>
+                <h4>{{entry.subtitle}}</h4>
+                <span><i class="fa fa-university"></i> {{entry.institution}}</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <p ng-bind-html="entry.description"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
